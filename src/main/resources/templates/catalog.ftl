@@ -27,24 +27,17 @@
 
 <h2>Каталог</h2>
 <div class="row">
-    <div class="col-sm-3">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">1984</h5>
-                <img class="card-img-top" src="1984.jpg" alt="Card image cap" style="width: 85%">
-                <a href="catalogProduct.html" class="btn" style="background-color: #9B4222; color: whitesmoke; padding: 10px; margin: 10px;">Перейти к книге</a>
+    <#list books.hasContent() as book>
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">${book.name}</h5>
+                    <img class="card-img-top" src="1984.jpg" alt="Card image cap" style="width: 85%">
+                    <a href="catalogProduct.html" class="btn" style="background-color: #9B4222; color: whitesmoke; padding: 10px; margin: 10px;">Перейти к книге</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Цветы для Элджернона</h5>
-                <img class="card-img-top" src="цветы.jpg" alt="Card image cap" style="width: 77%">
-                <a href="catalogProduct2.html" class="btn" style="background-color: #9B4222; color: whitesmoke; padding: 10px; margin: 10px;">Перейти к книге</a>
-            </div>
-        </div>
-    </div>
+    </#list>
 </div>
 </body>
 
