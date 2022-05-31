@@ -26,7 +26,7 @@ public class BookController {
     ){
         Page<Book> bookObject = bookService.findAll(pageable);
 
-        return new ModelAndView("/catalog")
+        return new ModelAndView("/bookscatalog")
                 .addObject("books", bookObject);
     }
 }

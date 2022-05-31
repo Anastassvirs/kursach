@@ -13,8 +13,19 @@ public class Book {
     private String name;
     private String description;
 
-    @Column(name = "author_id")
-    private Long author_id;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "author_id")
+    private Author author;
+
+    private String image_path;
+
+    public String getImage_path() {
+        return image_path;
+    }
+
+    public void setImage_path(String image_path) {
+        this.image_path = image_path;
+    }
 
     public Integer getId() {
         return id;
@@ -32,16 +43,16 @@ public class Book {
         return description;
     }
 
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
+
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public Long getAuthorId() {
-        return author_id;
-    }
-
-    public void setAuthorId(Long authorId) {
-        this.author_id = authorId;
     }
 }
 

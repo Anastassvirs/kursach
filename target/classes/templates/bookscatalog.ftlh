@@ -19,21 +19,21 @@
         <br>
         <h2>книга Amigo</h2>
         <div class="py-2">
-            <a href="index.html" class="btn btn-outline-light" role="button" aria-pressed="true" style="color: #9B4222; font-size: 25px; border-color: #9B4222;">Главная</a>
-            <a href="catalog.html" class="btn btn-outline-light" role="button" aria-pressed="true" style="color: #9B4222; font-size: 25px; border-color: #9B4222;">Каталог</a>
+            <a href="/index" class="btn btn-outline-light" role="button" aria-pressed="true" style="color: #9B4222; font-size: 25px; border-color: #9B4222;">Главная</a>
+            <a href="/catalog" class="btn btn-outline-light" role="button" aria-pressed="true" style="color: #9B4222; font-size: 25px; border-color: #9B4222;">Каталог</a>
         </div>
     </div>
 </nav>
 
 <h2>Каталог</h2>
 <div class="row">
-    <#list books.hasContent() as book>
+    <#list books.getContent() as book>
         <div class="col-sm-3">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">${book.name}</h5>
-                    <img class="card-img-top" src="1984.jpg" alt="Card image cap" style="width: 85%">
-                    <a href="catalogProduct.html" class="btn" style="background-color: #9B4222; color: whitesmoke; padding: 10px; margin: 10px;">Перейти к книге</a>
+                    <img class="card-img-top" src=${book.image_path} alt="CardImageCap" style="width: 80%">
+                    <a href="/catalogProduct" class="btn" style="background-color: #9B4222; color: whitesmoke; padding: 10px; margin: 10px;">Перейти к книге</a>
                 </div>
             </div>
         </div>

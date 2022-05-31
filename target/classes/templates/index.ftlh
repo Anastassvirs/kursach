@@ -20,8 +20,8 @@
             <br>
             <h2>книга Amigo</h2>
             <div class="py-2">
-                <a href="index.html" class="btn btn-outline-light" role="button" aria-pressed="true" style="color: #9B4222; font-size: 25px; border-color: #9B4222;">Главная</a>
-                <a href="catalog.html" class="btn btn-outline-light" role="button" aria-pressed="true" style="color: #9B4222; font-size: 25px; border-color: #9B4222;">Каталог</a>
+                <a href="/index" class="btn btn-outline-light" role="button" aria-pressed="true" style="color: #9B4222; font-size: 25px; border-color: #9B4222;">Главная</a>
+                <a href="/catalog" class="btn btn-outline-light" role="button" aria-pressed="true" style="color: #9B4222; font-size: 25px; border-color: #9B4222;">Каталог</a>
             </div>
         </div>
     </nav>
@@ -38,7 +38,7 @@
                         <i>Здесь вы найдёте те самые произведения, которые так давно искали. Подберем книги, которые станут вам настоящими друзьями.</i>
                     </div>
 
-                    <img src="подписные.jpg" width="40%">
+                    <img src="https://sun9-east.userapi.com/sun9-17/s/v1/ig2/p_jyGkU5hPd99qJs93eLXgknUdcRTsKGD4bbwz5PxgeZ9oXSFhdGjwTDkQ_rt8UGyLzE1fY88CjSJMOUtZlDrIOW.jpg?size=1024x683&quality=96&type=album" width="40%">
                 </div>
             </div>
 
