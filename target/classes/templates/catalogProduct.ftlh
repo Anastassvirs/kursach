@@ -20,19 +20,19 @@
             <br>
             <h2>книга Amigo</h2>
             <div class="py-2">
-                <a href="index.ftlh" class="btn btn-outline-light" role="button" aria-pressed="true" style="color: #9B4222; font-size: 25px; border-color: #9B4222;">Главная</a>
-                <a href="catalog.html" class="btn btn-outline-light" role="button" aria-pressed="true" style="color: #9B4222; font-size: 25px; border-color: #9B4222;">Каталог</a>
+                <a href="/index" class="btn btn-outline-light" role="button" aria-pressed="true" style="color: #9B4222; font-size: 25px; border-color: #9B4222;">Главная</a>
+                <a href="/catalog" class="btn btn-outline-light" role="button" aria-pressed="true" style="color: #9B4222; font-size: 25px; border-color: #9B4222;">Каталог</a>
             </div>
         </div>
     </nav>
 
     <h2>Название товара: 1984</h2>
-    <p><a href="1984.jpg" target="_blank"><img src="1984.jpg" width="10%"></a></p>
+    <p><a href="${book.image_path}" target="_blank"><img src="${book.image_path}" width="10%"></a></p>
     <h4>Описание товара</h4>
-    <i>Роман Оруэлла 1984 год был написан в 1949 и вызвал немалый резонанс в обществе, получив восторг критиков и одобрение коллег (Рассела, Хаксли и других). Роман внес в обиход такие понятия как: двоемыслие, мыслепреступление, новояз. Жестко цензурировался в СССР и распространялся лишь самиздатом.</i>
+    <i>${book.description}</i>
     <h4>Характеристики товара</h4>
     <ul class = "specifications">
-        <li>Автор: Джордж Оруэлл</li>
+        <li>Автор: ${book.author.name} ${book.author.surname}</li>
         <li>Количество страниц: 320</li>
         <li>Твердая обложка</li>
     </ul>

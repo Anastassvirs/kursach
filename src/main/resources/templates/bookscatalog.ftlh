@@ -33,7 +33,7 @@
                 <div class="card-body">
                     <h5 class="card-title">${book.name}</h5>
                     <img class="card-img-top" src=${book.image_path} alt="CardImageCap" style="width: 80%">
-                    <a href="/catalogProduct" class="btn" style="background-color: #9B4222; color: whitesmoke; padding: 10px; margin: 10px;">Перейти к книге</a>
+                    <a href="${book.id}/catalogProduct" class="btn" style="background-color: #9B4222; color: whitesmoke; padding: 10px; margin: 10px;">Перейти к книге</a>
                 </div>
             </div>
         </div>

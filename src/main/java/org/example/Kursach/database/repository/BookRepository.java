@@ -14,4 +14,6 @@ public interface BookRepository extends CrudRepository<Book, Integer> {
     void deleteByName(@NotNull String name);
 
     Page<Book> findAll(Pageable pageable);
+
+    Book findById(int id);
 }

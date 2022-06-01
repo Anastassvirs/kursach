@@ -19,4 +19,8 @@ public class BookService {
     public Page<Book> findAll(Pageable pageable) {
         return bookRepository.findAll(pageable);
     }
+
+    public Book findById(int id) {
+        return bookRepository.findById(id);
+    }
 }

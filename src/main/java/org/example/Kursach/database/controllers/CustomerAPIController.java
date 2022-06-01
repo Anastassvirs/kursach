@@ -32,7 +32,7 @@ public class CustomerAPIController {
         Customer customer = customerRepository.findById(id).get();
         customer.setLogin(login);
         return customerRepository.save(customer);
-    }ls
+    }
 
     @DeleteMapping("/{login}/delete")
     void deleteCustomer (@PathVariable String login) {
