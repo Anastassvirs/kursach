@@ -18,6 +18,4 @@ public interface BookRepository extends CrudRepository<Book, Integer> {
     Book findById(int id);
 
     Page<Book> findAllByGenre(String genre, Pageable pageable);
-
-    Page<Book> findAllByType(String type, Pageable pageable);
 }
