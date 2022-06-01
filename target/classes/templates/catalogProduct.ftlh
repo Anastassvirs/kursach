@@ -26,7 +26,7 @@
         </div>
     </nav>
 
-    <h2>Название товара: 1984</h2>
+    <h2>Название товара: ${book.name}</h2>
     <p><a href="${book.image_path}" target="_blank"><img src="${book.image_path}" width="10%"></a></p>
     <h4>Описание товара</h4>
     <i>${book.description}</i>
@@ -34,7 +34,7 @@
     <ul class = "specifications">
         <li>Автор: ${book.author.name} ${book.author.surname}</li>
         <li>Количество страниц: 320</li>
-        <li>Твердая обложка</li>
+        <li>Жанр: ${book.genre.name}</li>
     </ul>
 </div>
 </body>

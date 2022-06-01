@@ -17,6 +17,10 @@ public class Book {
     @JoinColumn(name = "author_id")
     private Author author;
 
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "genre_id")
+    private Genre genre;
+
     private String image_path;
 
     public String getImage_path() {
@@ -53,6 +57,14 @@ public class Book {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Genre getGenre() {
+        return genre;
+    }
+
+    public void setGenre(Genre genre) {
+        this.genre = genre;
     }
 }
 

@@ -23,4 +23,8 @@ public class BookService {
     public Book findById(int id) {
         return bookRepository.findById(id);
     }
+
+    public Page<Book> findByType(String type, Pageable pageable) {
+        return bookRepository.findAllByType(type, pageable);
+    }
 }
